@@ -1,619 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aflah Alifu — Full Stack Developer</title>
+    <title>Aflah Alifu — Full-Stack &amp; Mobile Engineer</title>
     <meta name="description"
-        content="Portfolio of Aflah Alifu — Full Stack Developer passionate about crafting interactive and user-friendly web & mobile experiences with React.js, Laravel, and Flutter." />
-    <meta property="og:title" content="Aflah Alifu — Full Stack Developer" />
+        content="Aflah Alifu — Full-Stack & Mobile Engineer building production web and cross-platform systems with Laravel, React.js, Next.js, and Flutter." />
+    <link rel="canonical" href="https://ztzrk.me/" />
+    <meta property="og:title" content="Aflah Alifu — Full-Stack & Mobile Engineer" />
     <meta property="og:description"
-        content="Full Stack Developer passionate about crafting interactive and user-friendly web & mobile experiences." />
+        content="Full-Stack & Mobile Engineer building production web and cross-platform systems with Laravel, React.js, Next.js, and Flutter." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ztzrk.me/" />
+    <meta property="og:image" content="https://ztzrk.me/1.JPG" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <div class="grain" aria-hidden="true"></div>
 
-    <!-- ============ CURSOR GLOW ============ -->
-    <div id="cursor-glow" class="cursor-glow"></div>
+    <!-- Whisper-quiet top bar -->
+    <header class="topbar">
+        <a href="#top" class="topbar-brand">Aflah Alifu</a>
+        <div class="topbar-right">
+            <span class="status-badge">
+                <span class="status-dot"></span>
+                Available for work
+            </span>
+            <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle theme">
+                <span id="theme-label">Dark</span>
+            </button>
+        </div>
+    </header>
 
-    <!-- ============ NAVBAR ============ -->
-    <nav id="navbar" class="navbar">
-        <a href="#hero" class="nav-logo">
-            <span class="logo-bracket">&lt;</span>Aflah<span class="logo-bracket"> /&gt;</span>
-        </a>
-        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-            <span></span><span></span><span></span>
-        </button>
-        <ul id="nav-menu" class="nav-menu">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
-        </ul>
-    </nav>
+    <main id="top" class="editorial-column">
 
-    <!-- ============ HERO ============ -->
-    <section id="hero" class="hero">
-        <canvas id="particles-canvas" class="particles-canvas"></canvas>
-        <div class="hero-content reveal">
-            <p class="hero-greeting">Hello, I'm</p>
-            <h1 class="hero-name">Aflah Alifu</h1>
-            <div class="hero-title-wrapper">
-                <span class="hero-title-prefix">A&nbsp;</span>
-                <span id="typed-text" class="typed-text"></span>
-                <span class="typed-cursor">|</span>
+        <!-- ============ 1. HERO (SINGLE FOCAL POINT) ============ -->
+        <section class="hero reveal">
+            <div class="identity-row">
+                <img src="1.JPG" alt="Aflah Alifu" class="avatar" width="72" height="72" />
+                <div>
+                    <h1 class="hero-name">Aflah Alifu</h1>
+                    <p class="hero-role">Full-Stack &amp; Mobile Engineer · Jakarta, ID</p>
+                </div>
             </div>
-            <p class="hero-description">
-                I craft interactive, user-friendly digital experiences — from web applications
-                with Laravel & React.js to mobile apps with Flutter. Let's build something amazing.
+
+            <p class="hero-statement">
+                I build production web and cross-platform mobile systems with
+                <em>Laravel</em>, <em>React</em>, <em>Next.js</em>, and <em>Flutter</em>—focused on
+                healthcare digitization, academic portals, and clean architecture.
             </p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary magnetic">
-                    <span>View My Work</span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 17L17 7M17 7H7M17 7V17" />
-                    </svg>
+
+            <div class="hero-links">
+                <a href="mailto:ralif877@gmail.com" class="primary-link">
+                    ralif877@gmail.com <span>↗</span>
                 </a>
-                <a href="#contact" class="btn btn-outline magnetic">
-                    <span>Get In Touch</span>
+                <a href="https://github.com/ztzrk" target="_blank" rel="noopener" class="muted-link">GitHub ↗</a>
+                <a href="https://www.linkedin.com/in/ztzrk/" target="_blank" rel="noopener" class="muted-link">LinkedIn ↗</a>
+                <a href="tel:+6285155016433" class="muted-link">+62 851 5501 6433</a>
+            </div>
+        </section>
+
+        <!-- ============ 2. SELECTED WORKS (SPOTLIGHT FOCUS LIST) ============ -->
+        <section id="work" class="section reveal">
+            <div class="section-head">
+                <h2 class="section-label">Selected Works</h2>
+                <span class="section-count">04</span>
+            </div>
+
+            <div class="spotlight-list">
+                <!-- 01 -->
+                <article class="work-row">
+                    <div class="work-row-top">
+                        <h3 class="work-title">Simpus D-Care</h3>
+                        <span class="work-tech">Laravel · Livewire · MySQL · Tailwind</span>
+                    </div>
+                    <p class="work-desc">
+                        Public health center platform automating patient registration, electronic medical records, and reporting across Makassar Puskesmas clinics.
+                    </p>
+                </article>
+
+                <!-- 02 -->
+                <a href="https://github.com/ztzrk" target="_blank" rel="noopener" class="work-row">
+                    <div class="work-row-top">
+                        <h3 class="work-title">RecyThing <span class="arrow">↗</span></h3>
+                        <span class="work-tech">Flutter · Dart · BLoC · REST API</span>
+                    </div>
+                    <p class="work-desc">
+                        Cross-platform mobile app incentivizing community waste management through reporting, recycling challenges, and gamified rewards.
+                    </p>
+                </a>
+
+                <!-- 03 -->
+                <a href="https://github.com/ztzrk" target="_blank" rel="noopener" class="work-row">
+                    <div class="work-row-top">
+                        <h3 class="work-title">Sarfaraz Rental Mobil <span class="arrow">↗</span></h3>
+                        <span class="work-tech">Laravel · React.js · MySQL</span>
+                    </div>
+                    <p class="work-desc">
+                        Vehicle rental and booking platform featuring dynamic fleet catalog browsing, pricing logic, and 24/7 automated reservations.
+                    </p>
+                </a>
+
+                <!-- 04 -->
+                <a href="https://github.com/ztzrk" target="_blank" rel="noopener" class="work-row">
+                    <div class="work-row-top">
+                        <h3 class="work-title">Kore &amp; Messy <span class="arrow">↗</span></h3>
+                        <span class="work-tech">React.js · TypeScript · Canvas API</span>
+                    </div>
+                    <p class="work-desc">
+                        Interactive data structure, algorithm, and 2D physics simulation visualizers built for intuitive computer science learning.
+                    </p>
                 </a>
             </div>
-            <div class="hero-scroll-indicator">
-                <div class="scroll-mouse">
-                    <div class="scroll-wheel"></div>
-                </div>
-                <span>Scroll Down</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">01.</span> About Me
-            </h2>
-            <div class="about-grid">
-                <div class="about-image-wrapper reveal reveal-left">
-                    <div class="about-image-border"></div>
-                    <div class="about-image">
-                        <img src="1.JPG" alt="Profile">
-                    </div>
-                </div>
-                <div class="about-text reveal reveal-right">
-                    <p>
-                        I'm an <strong>Information Systems student</strong> at Universitas Hasanuddin
-                        with a strong passion for developing the visual aspects of websites and apps.
-                        I enjoy crafting interactive and user-friendly interfaces, particularly using
-                        <strong>React.js</strong> for web development.
-                    </p>
-                    <p>
-                        Currently working as a <strong>Full Stack Developer</strong> at Dignity Digital Space,
-                        where I contribute to building Simpus D-Care — an integrated management information
-                        system designed to digitize and streamline operations for community health centers
-                        across Makassar.
-                    </p>
-                    <p>
-                        I've also expanded my skillset to mobile app development with <strong>Flutter</strong>,
-                        completing an intensive certification at Alterra Academy. I love exploring new
-                        technologies and turning ideas into polished digital products.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number" data-target="3">0</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-target="8">0</span>
-                            <span class="stat-label">Projects Completed</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-target="2">0</span>
-                            <span class="stat-label">Companies Worked</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-target="3">0</span>
-                            <span class="stat-label">Lab Assistantships</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- ============ 3. EXPERIENCE (CLEAN SINGLE-COLUMN SPINE) ============ -->
+        <section id="experience" class="section reveal">
+            <div class="section-head">
+                <h2 class="section-label">Experience</h2>
+                <span class="section-count">03</span>
             </div>
-        </div>
-    </section>
 
-    <!-- ============ SKILLS ============ -->
-    <section id="skills" class="section skills">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">02.</span> Skills & Technologies
-            </h2>
-            <div class="skills-grid reveal">
-                <!-- Frontend -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" />
-                            <path d="M8 21h8M12 17v4" />
-                        </svg>
-                        Frontend
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">Blade</span>
-                        <span class="skill-tag">Livewire</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">Shadcn UI</span>
-                        <span class="skill-tag">Mantine UI</span>
-                        <span class="skill-tag">Bootstrap</span>
+            <div class="career-list">
+                <!-- Role 1 -->
+                <article class="career-item">
+                    <div class="career-header">
+                        <div>
+                            <h3 class="career-role">Full-Stack Developer</h3>
+                            <p class="career-company">PT Dignity Digital Space · Makassar / Jakarta</p>
+                        </div>
+                        <span class="career-date">Feb 2026 — Aug 2026</span>
                     </div>
-                </div>
-                <!-- Backend -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="2" width="20" height="8" rx="2" />
-                            <rect x="2" y="14" width="20" height="8" rx="2" />
-                            <circle cx="6" cy="6" r="1" />
-                            <circle cx="6" cy="18" r="1" />
-                        </svg>
-                        Backend
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">Laravel</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">REST APIs</span>
-                    </div>
-                </div>
-                <!-- Mobile -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="5" y="2" width="14" height="20" rx="2" />
-                            <path d="M12 18h.01" />
-                        </svg>
-                        Mobile
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Flutter</span>
-                        <span class="skill-tag">Dart</span>
-                        <span class="skill-tag">Android (Java)</span>
-                    </div>
-                </div>
-                <!-- Database & Tools -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <ellipse cx="12" cy="5" rx="9" ry="3" />
-                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
-                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-                        </svg>
-                        Database & Tools
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Postman</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <ul class="career-points">
+                        <li>Core developer for <strong>Simpus D-Care</strong>, digitizing operations for community health centers (Puskesmas) across Makassar.</li>
+                        <li>Built clinical and administrative modules with Laravel, Livewire, and MySQL to accelerate patient record retrieval.</li>
+                        <li>Engineered digital surveying tools, audit reporting workflows, and accessible Blade + Tailwind CSS desk interfaces.</li>
+                    </ul>
+                </article>
 
-    <!-- ============ PROJECTS ============ -->
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">03.</span> Featured Projects
-            </h2>
-            <div class="project-filters reveal">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web App</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-            </div>
-            <div class="projects-grid">
-                <!-- Project 1: Simpus D-Care -->
-                <article class="project-card tilt-card reveal" data-category="web">
-                    <div class="project-card-inner">
-                        <div class="project-image" style="--accent: #06b6d4;">
-                            <div class="project-image-overlay"></div>
-                            <div class="project-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                </svg>
-                            </div>
+                <!-- Role 2 -->
+                <article class="career-item">
+                    <div class="career-header">
+                        <div>
+                            <h3 class="career-role">Frontend Developer</h3>
+                            <p class="career-company">CV NPE Digital · Makassar</p>
                         </div>
-                        <div class="project-info">
-                            <span class="project-category">Web Application</span>
-                            <h3 class="project-name">Simpus D-Care</h3>
-                            <p class="project-desc">An integrated management information system designed to digitize and
-                                streamline operations for community health centers (Puskesmas) across Makassar.</p>
-                            <div class="project-tech">
-                                <span>Laravel</span><span>Livewire</span><span>MySQL</span><span>Blade</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" aria-label="View live site">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path
-                                            d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+                        <span class="career-date">Aug 2023 — Mar 2024</span>
                     </div>
+                    <ul class="career-points">
+                        <li>Delivered university web portals for Tompotika Luwuk Banggai University and Graha Medika Kotamobagu Institute using Laravel and PHP.</li>
+                        <li>Engineered an academic credit equalization feature converting student extracurricular activities into recognized semester credits.</li>
+                        <li>Developed <strong>NPE Project Manager</strong> to centralize task and deliverable tracking across client projects.</li>
+                    </ul>
                 </article>
-                <!-- Project 2: Sarfaraz Rental -->
-                <article class="project-card tilt-card reveal" data-category="web">
-                    <div class="project-card-inner">
-                        <div class="project-image" style="--accent: #8b5cf6;">
-                            <div class="project-image-overlay"></div>
-                            <div class="project-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <path
-                                        d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
-                                </svg>
-                            </div>
+
+                <!-- Role 3 -->
+                <article class="career-item">
+                    <div class="career-header">
+                        <div>
+                            <h3 class="career-role">Laboratory Assistant &amp; Coordinator</h3>
+                            <p class="career-company">Universitas Hasanuddin · Leadership</p>
                         </div>
-                        <div class="project-info">
-                            <span class="project-category">Web Application</span>
-                            <h3 class="project-name">Sarfaraz Rental Mobil</h3>
-                            <p class="project-desc">Professional car rental website for a Makassar-based transportation
-                                company with a dynamic vehicle catalog and automated 24/7 booking system for luxury and
-                                commercial fleets.</p>
-                            <div class="project-tech">
-                                <span>Laravel</span><span>React.js</span><span>MySQL</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" aria-label="View live site">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path
-                                            d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-                                    </svg>
-                                </a>
-                                <a href="https://github.com/ztzrk" class="project-link" aria-label="View source code">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path
-                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+                        <span class="career-date">Feb 2023 — Dec 2024</span>
                     </div>
-                </article>
-                <!-- Project 3: RecyThing -->
-                <article class="project-card tilt-card reveal" data-category="mobile">
-                    <div class="project-card-inner">
-                        <div class="project-image" style="--accent: #10b981;">
-                            <div class="project-image-overlay"></div>
-                            <div class="project-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path
-                                        d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
-                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                                    <line x1="12" y1="22.08" x2="12" y2="12" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-category">Mobile Application</span>
-                            <h3 class="project-name">RecyThing</h3>
-                            <p class="project-desc">Waste management solution for Indonesia featuring waste reporting,
-                                recycling missions, and a points-based reward system to encourage environmental
-                                preservation.</p>
-                            <div class="project-tech">
-                                <span>Flutter</span><span>Dart</span><span>REST API</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/ztzrk" class="project-link" aria-label="View source code">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path
-                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Project 4: University Websites -->
-                <article class="project-card tilt-card reveal" data-category="web">
-                    <div class="project-card-inner">
-                        <div class="project-image" style="--accent: #ec4899;">
-                            <div class="project-image-overlay"></div>
-                            <div class="project-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-category">Web Application</span>
-                            <h3 class="project-name">University & Institute Websites</h3>
-                            <p class="project-desc">Developed websites for Tompotika Luwuk Banggai University and the
-                                Institute of Medical Technology at Graha Medika Kotamobagu, including extracurricular
-                                credit recognition features.</p>
-                            <div class="project-tech">
-                                <span>Laravel</span><span>PHP</span><span>MySQL</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" aria-label="View live site">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path
-                                            d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Project 5: NPE Project Manager -->
-                <article class="project-card tilt-card reveal" data-category="web">
-                    <div class="project-card-inner">
-                        <div class="project-image" style="--accent: #f59e0b;">
-                            <div class="project-image-overlay"></div>
-                            <div class="project-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                                    <path d="M3 9h18M9 21V9" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-category">Web Application</span>
-                            <h3 class="project-name">NPE Project Manager</h3>
-                            <p class="project-desc">Internal project management system for CV NPE Digital to manage and
-                                track software development projects using Laravel as the primary framework.</p>
-                            <div class="project-tech">
-                                <span>Laravel</span><span>PHP</span><span>MySQL</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" aria-label="View live site">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path
-                                            d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Project 6: Movie App -->
-                <article class="project-card tilt-card reveal" data-category="mobile">
-                    <div class="project-card-inner">
-                        <div class="project-image" style="--accent: #f43f5e;">
-                            <div class="project-image-overlay"></div>
-                            <div class="project-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <rect x="2" y="2" width="20" height="20" rx="2.18" />
-                                    <path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-category">Mobile Application</span>
-                            <h3 class="project-name">Movie App (Android)</h3>
-                            <p class="project-desc">Java-based movie library application featuring movie search,
-                                filtering, and the ability to create a personalized favorite movie list.</p>
-                            <div class="project-tech">
-                                <span>Java</span><span>Android</span><span>SQLite</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/ztzrk" class="project-link" aria-label="View source code">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path
-                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="career-points">
+                        <li>Led weekly hands-on lab sessions for 15–20 undergraduate students on web engineering with Laravel, MySQL, and relational modeling.</li>
+                        <li>Coordinated 9 lab assistants for Algorithms &amp; Programming, overseeing syllabus planning and coding assessments.</li>
+                    </ul>
                 </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ============ EXPERIENCE ============ -->
-    <section id="experience" class="section experience">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">04.</span> Experience
-            </h2>
-            <div class="timeline">
-                <div class="timeline-item reveal reveal-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <span class="timeline-date">Feb 2026 — Present</span>
-                        <h3 class="timeline-title">Full Stack Developer</h3>
-                        <h4 class="timeline-company">Dignity Digital Space — Makassar, Indonesia</h4>
-                        <p>Contributing to the development of Simpus D-Care, an integrated management information system
-                            designed to digitize and streamline operations for community health centers (Puskesmas)
-                            across Makassar. Working on web and mobile applications, digital surveying solutions, and
-                            business workflow automation.</p>
+        <!-- ============ 4. EDUCATION & STACK ============ -->
+        <section id="education" class="section reveal">
+            <div class="section-head">
+                <h2 class="section-label">Education &amp; Stack</h2>
+            </div>
+
+            <div class="edu-list">
+                <div class="edu-row">
+                    <div>
+                        <h3 class="edu-title">Universitas Hasanuddin</h3>
+                        <p class="edu-sub">Bachelor of Information Systems · <strong>GPA 3.64 / 4.00</strong></p>
                     </div>
+                    <span class="career-date">2021 — 2026</span>
                 </div>
-                <div class="timeline-item reveal reveal-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <span class="timeline-date">Aug 2023 — Mar 2024</span>
-                        <h3 class="timeline-title">Part-Time Frontend Developer</h3>
-                        <h4 class="timeline-company">CV NPE Digital — Makassar, Indonesia</h4>
-                        <p>Contributed to the development of Tompotika Luwuk Banggai University's website and the
-                            Institute of Medical Technology at Graha Medika Kotamobagu's site. Introduced a feature for
-                            recognizing and equalizing extracurricular activities as credits.</p>
+
+                <div class="edu-row">
+                    <div>
+                        <h3 class="edu-title">Alterra Academy</h3>
+                        <p class="edu-sub">Certified Mobile Engineer · <strong>Flutter Bootcamp</strong></p>
                     </div>
-                </div>
-                <div class="timeline-item reveal reveal-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <span class="timeline-date">2023 — 2024</span>
-                        <h3 class="timeline-title">Laboratory Assistant & Coordinator</h3>
-                        <h4 class="timeline-company">Universitas Hasanuddin — Makassar, Indonesia</h4>
-                        <p>Led weekly teaching sessions for 15–20 students on Laravel and MySQL. Coordinated a team of
-                            lab assistants for Algorithms and Programming, managing 9 students with teaching materials,
-                            assignments, and lab activities.</p>
-                    </div>
+                    <span class="career-date">Feb — Jul 2024</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- ============ EDUCATION ============ -->
-    <section id="education" class="section education">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">05.</span> Education
-            </h2>
-            <div class="timeline">
-                <div class="timeline-item reveal reveal-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <span class="timeline-date">Aug 2021 — Aug 2026 (Expected)</span>
-                        <h3 class="timeline-title">Bachelor of Information System</h3>
-                        <h4 class="timeline-company">Universitas Hasanuddin — Makassar, Indonesia</h4>
-                        <p>GPA: 3.64 / 4.00. Focused on web development with Laravel and React.js, Android app
-                            development using Java, and exploring management concepts.</p>
-                    </div>
+            <div class="stack-summary">
+                <div class="stack-group">
+                    <span class="stack-key">Web &amp; Backend</span>
+                    <span class="stack-val">Laravel, React.js, Next.js, TypeScript, Node.js, Express.js, Livewire, PHP, Tailwind CSS, Shadcn UI</span>
                 </div>
-                <div class="timeline-item reveal reveal-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <span class="timeline-date">Feb 2024 — Jul 2024</span>
-                        <h3 class="timeline-title">Certificate in Mobile Engineer with Flutter</h3>
-                        <h4 class="timeline-company">Alterra Academy — Malang, Indonesia</h4>
-                        <p>Developed mobile applications in an intensive program covering software engineering
-                            fundamentals, algorithms, and deployment. Collaborated in a multi-disciplinary team with
-                            Backend, Frontend, UI/UX, and Quality Engineers.</p>
-                    </div>
+                <div class="stack-group">
+                    <span class="stack-key">Mobile</span>
+                    <span class="stack-val">Flutter, Dart, BLoC State Management, Clean Architecture, Java, RESTful APIs</span>
+                </div>
+                <div class="stack-group">
+                    <span class="stack-key">Data &amp; Tools</span>
+                    <span class="stack-val">MySQL, PostgreSQL, SQLite, Git, GitHub, Docker (Basic), Postman, Figma</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ============ CONTACT ============ -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">06.</span> Get In Touch
-            </h2>
-            <div class="contact-grid">
-                <div class="contact-info reveal reveal-left">
-                    <p class="contact-description">
-                        I'm currently open to new opportunities and collaborations. Whether you have a
-                        project in mind, a question, or just want to say hello — my inbox is always open!
-                    </p>
-                    <div class="contact-details">
-                        <div class="contact-detail">
-                            <div class="contact-detail-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                    <path d="M22 6l-10 7L2 6" />
-                                </svg>
-                            </div>
-                            <div>
-                                <span class="contact-detail-label">Email</span>
-                                <a href="mailto:ralif877@gmail.com" class="contact-detail-value">ralif877@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-detail">
-                            <div class="contact-detail-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <span class="contact-detail-label">Phone</span>
-                                <a href="tel:+6285155016433" class="contact-detail-value">+62 851 5501 6433</a>
-                            </div>
-                        </div>
-                        <div class="contact-detail">
-                            <div class="contact-detail-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                                    <circle cx="12" cy="10" r="3" />
-                                </svg>
-                            </div>
-                            <div>
-                                <span class="contact-detail-label">Location</span>
-                                <span class="contact-detail-value">North Jakarta, Indonesia</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/ztzrk" target="_blank" rel="noopener" class="social-link magnetic"
-                            aria-label="GitHub">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ztzrk/" target="_blank" rel="noopener"
-                            class="social-link magnetic" aria-label="LinkedIn">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
-                                <rect x="2" y="9" width="4" height="12" />
-                                <circle cx="4" cy="4" r="2" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ FOOTER ============ -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">
-                Designed & Built with
-                <span class="footer-heart">♥</span>
-                by <strong>Aflah Alifu</strong>
+        <!-- ============ 5. QUIET SIGN-OFF ============ -->
+        <footer id="contact" class="footer-signoff reveal">
+            <p class="signoff-title">Let’s talk.</p>
+            <p class="signoff-sub">
+                Open for immediate full-stack or mobile engineering roles in Jakarta, Makassar, or remote.
             </p>
-            <p class="footer-copyright">© 2026 All Rights Reserved</p>
-        </div>
-    </footer>
+            <div class="signoff-actions">
+                <a href="mailto:ralif877@gmail.com" class="btn-solid">Email ralif877@gmail.com</a>
+                <button type="button" id="copy-email-btn" class="btn-outline" data-email="ralif877@gmail.com">
+                    Copy Email
+                </button>
+            </div>
+            <div class="signoff-meta">
+                <span>© 2026 Aflah Alifu</span>
+                <span>Jakarta, Indonesia</span>
+            </div>
+        </footer>
+
+    </main>
 
     <script src="script.js"></script>
 </body>
